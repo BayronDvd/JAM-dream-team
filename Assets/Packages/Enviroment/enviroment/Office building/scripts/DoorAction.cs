@@ -18,10 +18,10 @@ public class DoorAction : MonoBehaviour {
 
             Physics.Raycast(transform.position,transform.TransformDirection(Vector3.forward), out hit);
             
+                Debug.Log(hit.transform.gameObject.name);
                 
                 if (hit.transform.tag == "door")
                 {
-
                 hit.transform.gameObject.GetComponent<Door>().ActionDoor();
 
 
